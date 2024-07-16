@@ -1,0 +1,8 @@
+services:
+  node-game:
+    build: .
+    container_name: 'node-game'
+    tty: true
+    working_dir: "/haru"
+    volumes:
+      - "./haru:/haru"
